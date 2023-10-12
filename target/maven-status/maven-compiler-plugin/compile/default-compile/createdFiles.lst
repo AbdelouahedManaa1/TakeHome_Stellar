@@ -1,0 +1,7 @@
+pageLayers/CartPage.class
+utils/ElementUtil.class
+pageLayers/CheckoutCompletePage.class
+pageLayers/CheckoutInfoPage.class
+pageLayers/ProductPage.class
+pageLayers/CheckoutOverviewPage.class
+pageLayers/LoginPage.class

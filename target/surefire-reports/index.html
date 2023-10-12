@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MyTestSuite" class="navigator-link">
+              <span class="suite-name border-passed">MyTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MyTestSuite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MyTestSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MyTestSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MyTestSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MyTestSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MyTestSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MyTestSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyTestSuite" class="hide-methods passed suite-MyTestSuite"> (hide)</a> <!-- hide-methods passed suite-MyTestSuite -->
+                      <a href="#" panel-name="suite-MyTestSuite" class="show-methods passed suite-MyTestSuite"> (show)</a> <!-- show-methods passed suite-MyTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MyTestSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="positiveTests" class="method navigator-link" hash-for-method="addingItemsToCart">addingItemsToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="positiveTests" class="method navigator-link" hash-for-method="cartSaving">cartSaving</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="positiveTests" class="method navigator-link" hash-for-method="completeCheckout">completeCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="negativeTests" class="method navigator-link" hash-for-method="emptyFirstNameField">emptyFirstNameField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="negativeTests" class="method navigator-link" hash-for-method="emptyLastNameField">emptyLastNameField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="negativeTests" class="method navigator-link" hash-for-method="emptyPasswordLogin">emptyPasswordLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="negativeTests" class="method navigator-link" hash-for-method="emptyZipcodeField">emptyZipcodeField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyTestSuite" title="negativeTests" class="method navigator-link" hash-for-method="lockedoutUserLogin">lockedoutUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MyTestSuite" class="panel MyTestSuite">
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">positiveTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addingItemsToCart">
+                  </a> <!-- addingItemsToCart -->
+                  <span class="method-name">addingItemsToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cartSaving">
+                  </a> <!-- cartSaving -->
+                  <span class="method-name">cartSaving</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="completeCheckout">
+                  </a> <!-- completeCheckout -->
+                  <span class="method-name">completeCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+          <div class="suite-MyTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">negativeTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyFirstNameField">
+                  </a> <!-- emptyFirstNameField -->
+                  <span class="method-name">emptyFirstNameField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyLastNameField">
+                  </a> <!-- emptyLastNameField -->
+                  <span class="method-name">emptyLastNameField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyPasswordLogin">
+                  </a> <!-- emptyPasswordLogin -->
+                  <span class="method-name">emptyPasswordLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyZipcodeField">
+                  </a> <!-- emptyZipcodeField -->
+                  <span class="method-name">emptyZipcodeField</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="lockedoutUserLogin">
+                  </a> <!-- lockedoutUserLogin -->
+                  <span class="method-name">lockedoutUserLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyTestSuite-class-passed -->
+        </div> <!-- panel MyTestSuite -->
+        <div panel-name="test-xml-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/abdelouahedmanaa/saucelab-project/selenium-demo/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MyTestSuite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MyTest&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;positiveTests&quot;/&gt;
+      &lt;class name=&quot;negativeTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MyTest --&gt;
+&lt;/suite&gt; &lt;!-- MyTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">MyTest (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MyTestSuite');
+function tableData_MyTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'completeCheckout')
+data.setCell(0, 2, 'positiveTests')
+data.setCell(0, 3, 1958);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'emptyFirstNameField')
+data.setCell(1, 2, 'negativeTests')
+data.setCell(1, 3, 1859);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'cartSaving')
+data.setCell(2, 2, 'positiveTests')
+data.setCell(2, 3, 890);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addingItemsToCart')
+data.setCell(3, 2, 'positiveTests')
+data.setCell(3, 3, 760);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'emptyLastNameField')
+data.setCell(4, 2, 'negativeTests')
+data.setCell(4, 3, 614);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'emptyZipcodeField')
+data.setCell(5, 2, 'negativeTests')
+data.setCell(5, 3, 572);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'lockedoutUserLogin')
+data.setCell(6, 2, 'negativeTests')
+data.setCell(6, 3, 216);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'emptyPasswordLogin')
+data.setCell(7, 2, 'negativeTests')
+data.setCell(7, 3, 192);
+window.suiteTableData['MyTestSuite']= { tableData: data, tableDiv: 'times-div-MyTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-MyTestSuite">
+              </div> <!-- times-div-MyTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MyTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">negativeTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MyTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">positiveTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">negativeTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupBrowser</span>
+                <span class="method-start">104 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">positiveTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setupBrowser</span>
+                <span class="method-start">2102 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">completeCheckout</span>
+                <span class="method-start">3222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=completeCheckout status=SUCCESS method=positiveTests.completeCheckout()[pri:1, inst...)</span>
+                <span class="method-start">5181 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">addingItemsToCart</span>
+                <span class="method-start">5185 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cartSaving</span>
+                <span class="method-start">5945 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=addingItemsToCart status=SUCCESS method=positiveTests.addingItemsToCart()[pri:2, in...)</span>
+                <span class="method-start">5945 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=cartSaving status=SUCCESS method=positiveTests.cartSaving()[pri:3, instance:positiv...)</span>
+                <span class="method-start">6835 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">negativeTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">emptyFirstNameField</span>
+                <span class="method-start">6836 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=emptyFirstNameField status=SUCCESS method=negativeTests.emptyFirstNameField()[pri:1...)</span>
+                <span class="method-start">8695 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">emptyLastNameField</span>
+                <span class="method-start">8696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=emptyLastNameField status=SUCCESS method=negativeTests.emptyLastNameField()[pri:2, ...)</span>
+                <span class="method-start">9310 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">emptyZipcodeField</span>
+                <span class="method-start">9311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=emptyZipcodeField status=SUCCESS method=negativeTests.emptyZipcodeField()[pri:3, in...)</span>
+                <span class="method-start">9883 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">emptyPasswordLogin</span>
+                <span class="method-start">9883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">lockedoutUserLogin</span>
+                <span class="method-start">10075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=emptyPasswordLogin status=SUCCESS method=negativeTests.emptyPasswordLogin()[pri:4, ...)</span>
+                <span class="method-start">10075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=lockedoutUserLogin status=SUCCESS method=negativeTests.lockedoutUserLogin()[pri:5, ...)</span>
+                <span class="method-start">10292 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDownTest</span>
+                <span class="method-start">10292 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">positiveTests</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDownTest</span>
+                <span class="method-start">10550 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">11032 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

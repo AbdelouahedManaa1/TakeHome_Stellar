@@ -1,0 +1,8 @@
+<suite name="MyTestSuite" parallel="none">
+    <test name="MyTest">
+        <classes>
+            <class name="positiveTests" />
+            <class name="negativeTests" />
+        </classes>
+    </test>
+</suite>
